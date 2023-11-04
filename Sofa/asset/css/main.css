@@ -2,7 +2,38 @@
     margin: 0;
     padding: 0;
 }
+.home_five{
+    padding: 20px 250px;
+    background-color: rgb(255, 244, 216);
+}
 
+.imgbg{
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: ;
+}
+.videoho{
+    background-color: rgb(229, 97, 97);
+    padding: 10px;
+}
+.layoutimg img{
+    width: 100%;
+    height: 100%;
+}
+.sliderbaochi .draggable{
+    width: 100%;
+}
+.sliderbaochi img{
+    width: 111.747px;
+    height: 28.5895px;
+   background-color: none;
+}
+.sliderbaochi .slick-dots{
+    display: none !important;
+}
+.sliderbaoch .slick-slide{
+    margin: 0 20px !important;
+}
 header{
 background-color: rgb(17, 10, 92);
   position: fixed;
@@ -193,7 +224,7 @@ object-fit:cover;
     padding: 0 250px;
 }
 .home__fourth{
-    padding: 20px 270px;
+    padding: 50px 270px;
     background-color: rgb(199, 30, 21);
 }
 
@@ -236,20 +267,36 @@ object-fit:cover;
 .home__end input{
     border: none;
     outline: none;
-    margin-top: 10px;
-    height: 30px;
-    width: 70%;
+    margin-top: 13px;
+    height: 40px;
+    width: 80%;
     padding: 5px 10px;
 }
-
+.home__cuoi{
+    padding: 20px 250px;
+}
 .home__end select{
     border: none;
     outline: none;
-    margin-top: 10px;
-    height: 30px;
-    width: 70%;
+    margin-top: 13px;
+    height: 40px;
+    width: 80%;
 }
-
+.home_cuoi_btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.home_cuoi_btn div{
+    background-image: linear-gradient(rgb(255, 226, 89), rgb(255, 167, 81));
+    font-family: Quicksand, sans-serif;
+    font-weight: bold;
+    line-height: 1.6;
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px 40px;
+}
 .home__end button{
     padding: 10px 20px;
     margin-top: 10px;
@@ -281,6 +328,9 @@ footer svg{
 }
 .banner{
     margin-top: 58px;
+}
+.setHegiht{
+    height: 65px;
 }
 @media screen and (max-width: 769px) {
     .home__first_padding{
@@ -327,6 +377,38 @@ footer svg{
         height: auto;
         padding: 7px;
     }
+
+    .mess{
+        position: fixed;
+       bottom: 80px;
+       right: 20px;
+       z-index: 9999;
+    }
+    .zalo{
+        position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+    .home__cuoi{
+        padding: 20px 10px;
+    }
+
+    .home_cuoi_btn div{
+        padding: 10px 20px;
+    }
+
+    .home_cuoi_btn{
+        margin-bottom: 20px;
+    }
+
+    .home__cuoi_center{
+        text-align: center;
+    }
+    .home_five{
+        padding: 20px 0px;
+    }
+    
 }
 
 
