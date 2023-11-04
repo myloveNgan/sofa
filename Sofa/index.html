@@ -639,14 +639,16 @@
     overflow: hidden;
   }
 </style>
-
+<div style="background: none;" class="mess header_btn">
+  <img style="width: 60px; height: 60px;" src="asset/images/free-facebook-messenger-icon-2881-thumb-20221012083709-6ipxx.png" alt="">
+</div>
 <!-- zalo -->
 <div class="zalo" id="zalo">
   <img src="asset/images/Logo.svg" alt="">
 </div>
 
 <!-- test -->
-<section class="chatzalo">
+<section class="chatzalo" id="chatzalo">
   <div class="container py-5">
 
     <div class="row d-flex justify-content-center w-100">
@@ -655,12 +657,12 @@
         <div class="card" id="chat1" style="border-radius: 15px;">
           <div
             class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
-            style="border-top-left-radius: 15px; border-top-right-radius: 15px; height: 70px;">
+            style="border-top-left-radius: 15px; border-top-right-radius: 15px; height: 70px; background: linear-gradient(45deg,#3386ff,#0068ff);">
            <div style="height: 50px;">
             <img style="border-radius: 50%; width: 100%; height: 100%;" src="asset/images/dea00f36c771c78318f9793451013f15.jpg" alt="">
            </div>
             <p class="mb-0 fw-bold" style="font-size: 22px;">Toshiko Việt Nam</p>
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times" id="icon__close"></i>
           </div>
           <div class="card-body">
 
@@ -679,8 +681,24 @@
               <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
                 alt="avatar 1" style="width: 45px; height: 100%;">
             </div>
+
+            <div class="d-flex flex-row justify-content-start mb-4">
+              <img style="border-radius: 50%; width: 50px; height: 50px;"  src="asset/images/dea00f36c771c78318f9793451013f15.jpg"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+              <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                <p class="small mb-0">Yêu bạn lắm !!</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mb-4">
+              <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                <p class="small mb-0">oke !!!</p>
+              </div>
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+            </div>
             <div class="form-outline">
-              <textarea placeholder="Nhập tin nhắn, nhấn Enter để gửi..." class="form-control" id="textAreaExample" rows="1"></textarea>
+              <input style="width: 100% ; outline: none; padding: 5px 10px; border: none;" type="text" placeholder="Nhập tin nhắn, nhấn Enter để gửi...">
             </div>
 
           </div>
@@ -691,6 +709,17 @@
 
   </div>
 </section>
+
+<script>
+  const chatzaloSection = document.getElementById("chatzalo");
+  document.getElementById("zalo").addEventListener("click", function() {
+    chatzaloSection.style.display = "block"; 
+  });
+
+  document.getElementById("icon__close").addEventListener("click", function() {
+    chatzaloSection.style.display = "none"; 
+  });
+  </script>
 <!-- end -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

@@ -9,6 +9,12 @@ background-color: rgb(17, 10, 92);
   top: 0;
   z-index: 9999;
 }
+.mess{
+    position: fixed;
+   bottom: 120px;
+   right: 50px;
+   z-index: 9999;
+}
 .zalo{
     position: fixed;
   bottom: 50px;
