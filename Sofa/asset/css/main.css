@@ -6,7 +6,12 @@
     padding: 20px 250px;
     background-color: rgb(255, 244, 216);
 }
-
+.resformtext{
+    font-size: 15px;
+}
+.tesstlayout2{ 
+    display: none;
+}
 .imgbg{
     background-color: #fff;
     padding: 5px;
@@ -76,6 +81,7 @@ background-color: rgb(17, 10, 92);
     margin-top: 10px;
     outline: none;
     border: none;
+    height: 35px;
 }
 .back button{
     margin-top: 10px;
@@ -332,6 +338,9 @@ footer svg{
 .setHegiht{
     height: 65px;
 }
+.khoa2{
+    display: none;
+}
 @media screen and (max-width: 769px) {
     .home__first_padding{
         padding:10px ;
@@ -408,7 +417,50 @@ footer svg{
     .home_five{
         padding: 20px 0px;
     }
-    
+
+    .tesstlayout1{ 
+        display: none;
+    }
+    .tesstlayout2{ 
+        display: block;
+    }
+
+    .resformtext{ 
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    .modal-dialog-centered{
+        padding: 100px 15px 60px 15px;
+    }
+    .mess {
+        display: none;
+    }
+    .back input{
+        width: 48%;
+        height: 30px;
+    }
+
+    .back select{
+        width: 48%;
+        height: 30px;
+    }
+
+    .righttest{
+        float: right;
+    }
+
+    .hoanthanhdangki{
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+
+    .khoa1{
+        display: none;
+    }
+
+    .khoa2{
+        display: block;
+    }
 }
 
 

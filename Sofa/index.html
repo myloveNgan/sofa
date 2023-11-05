@@ -714,7 +714,7 @@
         </div>
      </div>
 
-     <div class="row layoutimg mt-4">
+     <div class="row layoutimg mt-4 tesstlayout1">
         <div class="col-md-3 d-flex flex-column justify-content-between">
           <div class="imgbg">
             <img src="asset/images/trong-lan-20230207043926-dojmf.jpg" alt="">
@@ -737,6 +737,36 @@
           </div>
         </div>
      </div>
+
+     <div class="layoutimg mt-4 d-md-none d-block tesstlayout2">
+
+      <div class="row">
+        <div class="col-6 p-1">
+          <div  class="imgbg h-100 w-100">
+            <img class="h-100 w-100" src="asset/images/quyen-linh-20230207043143-wpje2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="col-6 p-1">
+          <div class="imgbg pb-1">
+            <img src="asset/images/trung-anh-20230207042354-t1u2q.jpg" alt="">
+          </div>
+          <div class="imgbg mt-1">
+            <img src="asset/images/lan-huong-20230207042521-9owbb.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="imgbg col-6">
+          <img src="asset/images/trong-lan-20230207043926-dojmf.jpg" alt="">
+        </div>
+        <div class="imgbg col-6">
+          <img src="asset/images/lan-huong-20230207042521-9owbb.png" alt="">
+        </div>
+      </div>
+      
+      
+   </div>
 
      <h2 class="text-center mt-4">BÁO CHÍ TRUYỀN THÔNG ĐƯA TIN</h2>
       <div class="d-flex justify-content-center">
@@ -979,28 +1009,35 @@
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" style="overflow: hidden;">
+    <div class="modal-content" style="overflow: hidden; position: relative;">
+      <button style="position: absolute; top:0 ; right: 0;" type="button" class="btn-close text-white khoa2" data-bs-dismiss="modal" aria-label="Close"></button>
       <div class="row p-2 back">
         <div class="col-md-6">
           <img class="w-100 h-100" src="asset/images/nhieu-ghe-ladi-1810-05-20231020081550-ngfv_.png" alt="">
       </div>
-      <div class="col-md-6">
-        <button style="float: right;" type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="col-md-6" style="position: relative;">
+        <button style="position: absolute; top:0 ; right: 0;" type="button" class="btn-close  text-white khoa1" data-bs-dismiss="modal" aria-label="Close"></button>
         <form style="flex-direction: column;" class="d-flex align-items-center" action="">
-          <h3 class="m-0 fw-bold" style="color: rgb(255, 221, 0);">ĐĂNG KÍ TRẢI NGHIỆM MIỄN PHÍ</h3>
+          <h3 class="m-0 fw-bold resformtext" style="color: rgb(255, 221, 0);">ĐĂNG KÍ TRẢI NGHIỆM MIỄN PHÍ</h3>
           <p class="m-0 fw-bold text-white">ĐĂNG KÍ NGAY!</p>
-          <input type="text" name="" id="" placeholder="Họ và Tên :">
-          <input type="text" name="" id="" placeholder="Họ và Tên :">
-          <input type="text" name="" id="" placeholder="Họ và Tên :">
-          <select>
-              <option value="">ĐỂ ĐƯỢC TƯ VẤN!</option>
-              <option value="">ĐIỀN THÔNG TIN</option>
+          <div class="row d-flex justify-content-center">
+           <div class="d-md-flex align-items-center flex-column">
+            <input class="col-md-12 col-6" type="text" name="" id="" placeholder="Họ và Tên :">
+            <input class="col-md-12 col-6 righttest" type="text" name="" id="" placeholder="Số điện thoại :">
+           </div>
+          <div class="d-md-flex align-items-center flex-column">
+            <input class="col-md-12 col-6" type="text" name="" id="" placeholder="Địa chỉ :">
+          <select class="col-md-12 col-6 righttest">
+              <option value="">Sản phẩm lựa chọn</option>
+              <option value="">Kagawa K85</option>
               <option value="">ĐIỀN THÔNG TIN</option>
               <option value="">ĐIỀN THÔNG TIN</option>
           </select>
+          </div>
+          </div>
 
-          <button style="background-color: rgb(255, 190, 39);" type="submit">
-              Hoàn THÀNH ĐĂNG KÍ  
+          <button class="hoanthanhdangki fw-bold" style="background-color: rgb(255, 190, 39);" type="submit">
+              Hoàn thành đăng kí
           </button>
      </form>
       </div>
